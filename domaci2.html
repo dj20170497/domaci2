@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Domaci 2</title>
+</head>
+<body>  
+<div id="prvaTri" >
+    <div id="prvi" >
+        <a href="">jedan</a>
+        <a href="">dva</a>
+        <a href="">tri</a>
+        <a href="">cetiri</a>
+        <a href="">peti</a>
+
+    </div>
+    <div id="drugi">
+        <a href="">jedan dva</a>
+        <a href="">dva dva</a>
+        <a href="">tri dva</a>
+        <a href="">cetiri dva</a>
+        <a href="">pet dva</a>
+    </div>
+    <div id="treci">
+        <a href="">jedan tri</a>
+        <a href="">dva tri</a>
+        <a href="">tri tri</a>
+        <a href="">cetiri tri</a>
+        <a href="">pet tri</a>
+    </div>
+</div>
+<div id="drugaTri">
+    <div id="cetvrti">
+        <a href="">jedan cetiri</a>
+        <a href="">dva cetiri</a>
+        <a href="">tri cetiri</a>
+        <a href="">cetiri cetiri</a>
+        <a href="">pet cetiri</a>
+    </div>
+    <div id="peti">
+        <a href="">jedan pet</a>
+        <a href="">dva pet</a>
+        <a href="">tri pet</a>
+        <a href="">cetiri pet</a>
+        <a href="">pet pet</a>
+    </div>
+    <div id="sesti">
+        <a href="">jedan sest</a>
+        <a href="">dva sest</a>
+        <a href="">tri sest</a>
+        <a href="">cetiri sest</a>
+        <a href="">pet sest</a>
+    </div>
+</div>
+</body>
+<style>
+    #prvaTri{display: flex; }
+    #drugaTri{display: grid; grid-auto-flow: column; grid-template-columns: 20% auto 30%;}
+
+    #prvi{
+    flex: 1;
+    display: flex;
+    padding: 10px;
+        justify-content: flex-start;
+}
+    #drugi{
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#treci{
+    flex:1;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+#cetvrti{
+    display: grid;
+    padding: 15px;
+    justify-content: start;
+}
+
+#peti{
+    display: grid;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+#sesti{
+    display: grid;
+    padding: 15px;
+    justify-content: end;
+}
+
+
+a{
+    padding: 15px;
+    color: white;
+}
+html,body{
+    background-color: grey;
+}
+
+@media (max-width: 1150px) {
+  #prvaTri{
+      flex-flow: column;
+  }
+  #drugaTri{
+      grid-auto-flow: row;
+  }
+}
+
+</style>
+</html>
